@@ -88,9 +88,6 @@ set smartcase
 " Jump to matches when entering regexp
 set showmatch
 
-" Place a sign at the end of the word when entering change mode
-set cpoptions=ces$
-
 " Set the search to wrap lines
 set wrapscan
 
