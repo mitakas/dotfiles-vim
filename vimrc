@@ -103,6 +103,9 @@ nmap <F7> :NERDTreeToggle<CR>
 " Close the NERDTree with Shift-F7
 nmap <S-F7> :NERDTreeClose<CR>
 
+" Toggle Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " emacs follow: scroll bind two windows one screenful apart
 nmap <silent> <Leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr>:set scb<cr>
 
