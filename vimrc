@@ -115,3 +115,16 @@ set history=100
 " Hightlight extra whitespace at the end of lines
 highlight ExtraWhitespace ctermbg=red guibg=#AF0000
 match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" Unite
+" File searching like ctrlp.vim
+nnoremap <C-p> :Unite file_rec/async<cr>
+
+" Content searching like ack.vim
+nnoremap <space>/ :Unite grep:.<cr>
+
+" Yank history line yankring
+nnoremap <space>y :Unite history/yank<cr>
+
+" Buffer switching line LustyJuggler
+nnoremap <space>s :Unite -quick-match buffer<cr>
