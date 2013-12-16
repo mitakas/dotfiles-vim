@@ -97,11 +97,11 @@ set laststatus=2
 " Set the status line in a cool way
 set statusline=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]
 
-" Toggle the NERDTree on and off with F7
-nmap <F7> :NERDTreeToggle<CR>
+" Toggle the NERDTree on and off with F6
+nmap <F6> :NERDTreeToggle<CR>
 
-" Close the NERDTree with Shift-F7
-nmap <S-F7> :NERDTreeClose<CR>
+" Close the NERDTree with Shift-F6
+nmap <S-F6> :NERDTreeClose<CR>
 
 " Toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
