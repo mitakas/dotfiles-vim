@@ -18,7 +18,7 @@
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
+	url = https://github.com/majutsushi/tagbar
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
@@ -27,4 +27,4 @@
 	url = https://github.com/Shougo/vimproc.vim.git
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
-	url = git@github.com:nvie/vim-flake8.git
+	url = https://github.com/nvie/vim-flake8.git
