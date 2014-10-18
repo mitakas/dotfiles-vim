@@ -14,7 +14,8 @@ if has('mouse')
 endif
 
 " Load pathogen from the bindle
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 
 " Enable syntax highlighting
 if &t_Co > 1
