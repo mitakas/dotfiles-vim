@@ -9,9 +9,9 @@ set backspace=indent,eol,start
 set encoding=utf-8
 
 " Enable the mouse if there is any
-if has('mouse')
-  set mouse=a
-endif
+"if has('mouse')
+"  set mouse=a
+"endif
 
 " Load pathogen from the bindle
 call pathogen#infect()
@@ -108,7 +108,7 @@ nmap <S-F6> :NERDTreeClose<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " emacs follow: scroll bind two windows one screenful apart
-nmap <silent> <Leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr>:set scb<cr>
+nmap <silent> <leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr>:set scb<cr>
 
 " Remember more than 20 commands
 set history=100
@@ -123,9 +123,3 @@ nnoremap <C-p> :Unite file_rec/async<cr>
 
 " Content searching like ack.vim
 nnoremap <space>/ :Unite grep:.<cr>
-
-" Yank history line yankring
-nnoremap <space>y :Unite history/yank<cr>
-
-" Buffer switching line LustyJuggler
-nnoremap <space>s :Unite -quick-match buffer<cr>
