@@ -19,7 +19,7 @@ call pathogen#helptags()
 
 " Enable syntax highlighting
 if &t_Co > 1
-	syntax enable
+    syntax enable
 endif
 
 " Number the lines
@@ -55,7 +55,7 @@ filetype plugin indent on
 nmap <leader>l :set list!<CR>
 
 " Use the same symblos as TextMate for tabstops and EOLs
-set listchars=tab:•\ ,eol:¬
+set listchars=tab:•\ ,eol:¬,extends:>,precedes:<,nbsp:+
 
 " Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -104,8 +104,11 @@ nmap <F6> :NERDTreeToggle<CR>
 " Close the NERDTree with Shift-F6
 nmap <S-F6> :NERDTreeClose<CR>
 
-" Toggle Tagbar
+" Toggle Tagbar with F8
 nmap <F8> :TagbarToggle<CR>
+
+" Close Tagbar with Shift-F8
+nmap <S-F8> :TagbarClose<CR>
 
 " emacs follow: scroll bind two windows one screenful apart
 nmap <silent> <leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr>:set scb<cr>
@@ -123,3 +126,6 @@ nnoremap <C-p> :Unite file_rec/async<cr>
 
 " Content searching like ack.vim
 nnoremap <space>/ :Unite grep:.<cr>
+
+" Search for tags up until $HOME
+set tags=./tags;$HOME
