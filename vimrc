@@ -14,13 +14,10 @@ set encoding=utf-8
 "endif
 
 " Load pathogen from the bindle
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " Enable syntax highlighting
-if &t_Co > 1
-    syntax enable
-endif
+syntax on
 
 " Number the lines
 set number
