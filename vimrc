@@ -126,3 +126,6 @@ nnoremap <space>/ :Unite grep:.<cr>
 
 " Search for tags up until $HOME
 set tags=./tags;$HOME
+
+" associate *.zcml with xml filetype
+au BufRead,BufNewFile *.zcml setfiletype xml
