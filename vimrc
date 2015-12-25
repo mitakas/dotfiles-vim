@@ -129,3 +129,4 @@ set tags=./tags;$HOME
 
 " associate *.zcml with xml filetype
 au BufRead,BufNewFile *.zcml setfiletype xml
+au BufRead,BufNewFile *.zcml setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab
