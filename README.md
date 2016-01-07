@@ -9,6 +9,7 @@ I use [pathogen.vim](https://github.com/tpope/vim-pathogen) to manage my plugins
     cd ~/.vim && git clone https://github.com/mitakas/dotfiles-vim.git .
     git submodule update --init # pathogen, as well as the other plugins are submodules
     cd ~/.vim/bundle/vimproc/ && make -f make_unix.mak # compile vimproc
+    cd ~/.vim/bundle/YouCompleteMe/ && git submodule update --init --recursive && ./install.py # compile YouCompleteMe
     ln -s ~/.vim/vimrc ~/.vimrc
     popd
 
