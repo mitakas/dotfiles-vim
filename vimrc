@@ -124,6 +124,12 @@ nnoremap <C-p> :Unite file_rec/async<cr>
 " Content searching like ack.vim
 nnoremap <space>/ :Unite grep:.<cr>
 
+" vim-dispatch, run make
+nmap <F7> :Make!<CR>
+
+" vim-dispatch, open quickfix window
+nmap <S-F7> :Copen<CR>
+
 " Search for tags up until $HOME
 set tags=./tags;$HOME
 
