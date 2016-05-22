@@ -136,3 +136,10 @@ set tags=./tags;$HOME
 " associate *.zcml with xml filetype
 au BufRead,BufNewFile *.zcml setfiletype xml
 au BufRead,BufNewFile *.zcml setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+" smaller tab size for html
+au BufRead,BufNewFile *.html setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.yml setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+" sort python imports
+command! -range=% Isort :<line1>,<line2>! isort -
