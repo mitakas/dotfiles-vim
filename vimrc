@@ -38,6 +38,8 @@ set incsearch
 set autoindent
 set smartindent
 
+" Show the current line
+set cursorline
 " Show the current command in the lower right corner
 set showcmd
 " Show the autocomplete options when pressing tab
@@ -58,8 +60,10 @@ set listchars=tab:•\ ,eol:¬,extends:>,precedes:<,nbsp:+
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" set ts=8 sts=0 sw=8 noexpandtab " default setting
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set softtabstop=4
 set smarttab
 
 " exception for Makefiles
@@ -143,3 +147,16 @@ au BufRead,BufNewFile *.yml setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " sort python imports
 command! -range=% Isort :<line1>,<line2>! isort -
+
+" more highlighting in python
+let python_highlight_all = 1
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
